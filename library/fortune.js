@@ -3,7 +3,7 @@
 
 function getFortune() {
     var randomNumber = (Math.floor(Math.random() * 10) + 1);
-    console.log("You were selected fortune #" + randomNumber);
+    console.log("fortune #" + randomNumber);
     switch (randomNumber) {
         case 1:
             return "You have an ability to sense and know higher truth.";
@@ -18,11 +18,9 @@ function getFortune() {
         case 6: 
             return "Exercise caution in your daily affairs.";
         case 7: 
-            return "You are scrupulously honest, frank, and \
-            straightforward.  Therefore you have few friends.";
+            return "You are scrupulously honest, frank, and straightforward. Therefore you have few friends.";
         case 8: 
-            return "You will be attacked by a beast who has the \
-            body of a wolf, the tail of a lion, and the face of Donald Duck.";
+            return "You will be attacked by a beast who has the body of a wolf, the tail of a lion, and the face of Donald Duck.";
         case 9: 
             return "You are a bundle of energy, always on the go";
         default: 

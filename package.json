@@ -1,0 +1,19 @@
+{
+  "name": "node-workshop-2",
+  "version": "1.0.0",
+  "description": "kayla's node-workshop-2 project",
+  "main": "cps.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hennigk/node-workshop-2.git"
+  },
+  "author": "kayla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hennigk/node-workshop-2/issues"
+  },
+  "homepage": "https://github.com/hennigk/node-workshop-2"
+}

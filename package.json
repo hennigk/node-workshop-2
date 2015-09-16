@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/hennigk/node-workshop-2/issues"
   },
-  "homepage": "https://github.com/hennigk/node-workshop-2"
+  "homepage": "https://github.com/hennigk/node-workshop-2",
+  "dependencies": {
+    "request": "^2.62.0"
+  }
 }

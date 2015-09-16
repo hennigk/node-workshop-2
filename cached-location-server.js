@@ -22,6 +22,7 @@ var server = http.createServer(function(req, response) {
                 response.write(" \n Your city is: " + cityArray[i].name) ;
                 response.write(" \n Your latitude is: " + cityArray[i].lat) ;
                 response.write("\n Your longitude is: " + cityArray[i].long);
+                response.write("\n someone has inputed this city before!");
                 response.end();
             } 
         }
@@ -41,6 +42,7 @@ var server = http.createServer(function(req, response) {
                     response.write(" \n Your city is: " + userCity) ;
                     response.write(" \n Your latitude is: " + lat1.toString()) ;
                     response.write("\n Your longitude is: " + long1.toString());
+                    response.write("\n no one has inputed this city before!");
                     response.end();
                 }
                 else {

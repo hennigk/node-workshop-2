@@ -19,26 +19,22 @@ function getLastChar(stringInput, retLastChar) {
 function getFirstAndLast(stringInput, retNewString){
     var firstLetter = "";
     var lastLetter = "";
-    getFirstChar(stringInput, function(letter){firstLetter = letter});
-    getLastChar(stringInput, function(letter){lastLetter = letter});
-    var newString = firstLetter + lastLetter
+    getFirstChar(stringInput, function(letter1) {
+        firstLetter = letter1;
+        getLastChar(stringInput, function(letter2) {
+            lastLetter = letter2; 
+        });
+    });
+    var newString = firstLetter + lastLetter;
     retNewString(newString);
 }
 
 
+//getFirstChar(testString, displayFunc);
+//getLastChar(testString, displayFunc);
+//getFirstAndLast(testString, displayFunc);
 
-
-//call function firstChar with a string
-//and a function that displays the value
-getFirstChar(testString, displayFunc);
-getLastChar(testString, displayFunc);
-getFirstAndLast(testString, displayFunc);
-
-/*Create a function that takes a string and a continuation (callback)
-Your function should use the two previous functions you 
-created to "return" a string that contains both the first and 
-last character of the initial string
-I should be able to use your function as such:
-getFirstAndLast("hello", function(newStr) { console.log(newStr); }); 
-// should output "ho"*/
+//link randomFortune to library
+var randomFortune = require("./library/fortune.js");
+console.log(randomFortune())
 

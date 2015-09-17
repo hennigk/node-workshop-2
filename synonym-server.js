@@ -38,7 +38,7 @@ var server = http.createServer(function(req, response) {
         else {
             response.write("There are no synonyms for your word!");
         }
-        response.end();    
+        response.end();   
         });  
     }
 });

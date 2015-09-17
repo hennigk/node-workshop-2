@@ -30,11 +30,12 @@ function getFirstAndLast(stringInput, retNewString){
 }
 
 
+getFirstAndLast("hello", function(newStr) { console.log(newStr); });
 //getFirstChar(testString, displayFunc);
 //getLastChar(testString, displayFunc);
 //getFirstAndLast(testString, displayFunc);
 
 //link randomFortune to library
 var randomFortune = require("./library/fortune.js");
-console.log(randomFortune())
+//console.log(randomFortune())
 
